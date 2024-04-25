@@ -22,6 +22,7 @@ Pod::Spec.new do |sqliterk|
   sqliterk.public_header_files = "repair/SQLiteRepairKit.h"
   sqliterk.source_files  = "repair/*.{h,c,cpp}"
   sqliterk.libraries = "z", "c++"
+  sqliterk.resource_bundles = { 'sqliterk.Privacy' => 'repair/PrivacyInfo.xcprivacy' }
   sqliterk.pod_target_xcconfig = {
     "GCC_PREPROCESSOR_DEFINITIONS" => "SQLITE_HAS_CODEC WCDB_BUILTIN_SQLCIPHER",
     "LIBRARY_SEARCH_PATHS[sdk=macosx*]" => "$(SDKROOT)/usr/lib/system",
