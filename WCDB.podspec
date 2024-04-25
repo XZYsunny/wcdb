@@ -34,7 +34,7 @@ Pod::Spec.new do |wcdb|
     "OTHER_CFLAGS" => "-fvisibility-inlines-hidden",
     "OTHER_CPLUSPLUSFLAGS" => "-fvisibility-inlines-hidden",
   }
-  s.resource_bundles = { 'wcdb.Privacy' => 'objc/WCDB/PrivacyInfo.xcprivacy' }
+  wcdb.resource_bundles = { 'wcdb.Privacy' => 'objc/WCDB/PrivacyInfo.xcprivacy' }
   wcdb.header_dir = "WCDB"
   wcdb.dependency 'WCDBOptimizedSQLCipher', '~> 1.2.0'
   wcdb.dependency 'SQLiteRepairKit', '~> 1.2.0'
